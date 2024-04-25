@@ -7,6 +7,12 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
+
+  isWorkExperienceOpen: boolean = false;
+  isEducationOpen: boolean = false;
+  isCertificationOpen: boolean = false;
+  isSkillsOpen: boolean = false;
+
   constructor(private titleService: Title, private renderer: Renderer2 ){
     this.titleService.setTitle('Pinki Jha - Resume');
 

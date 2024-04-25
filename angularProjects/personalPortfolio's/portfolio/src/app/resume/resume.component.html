@@ -1,3 +1,160 @@
 <div class="container text-center">
     <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border"> Download PDF Resume</button>
+
+    <div class="pb-2">
+
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen"  style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Mastek Ltd.</h3>
+                    <ul>
+                        <li>Developing and maintaining robust web applications using Angular,
+                            Rest Api, and Java.</li>
+                        <li>Collaborating with cross-functional teams to design and develop
+                            user-friendly interfaces and API.</li>
+                        <li>Keeping up-to-date with industry trends and emerging
+                            technologies to drive innovation within the team.</li>
+                    </ul>
+                </div>
+                <hr>           
+                 <div style="text-align: left;">
+                    <h2 class="mb-0">Web Designer</h2>
+                    <h3 class="text-primary">Rath Infotech</h3>
+                    <ul>
+                        <li>During my tenure at Rath Infotech, where I served as a Front-End
+                            Developer for 1 Year, I had the opportunity to contribute
+                            significantly to various projects.</li>
+                        <li>As a Front-End Developer, my responsibilities included translating
+                            UI/UX designs into responsive and interactive web applications. I
+                            collaborated closely with cross-functional teams, including
+                            designers and back-end developers, to deliver seamless user
+                            experiences.</li>
+                    </ul>
+                </div>
+                <hr>          
+                <div style="text-align: left;">
+                   <h2 class="mb-0">Intern</h2>
+                   <h3 class="text-primary">ESDA Infotech</h3>
+                   <ul>
+                       <li>Developed and maintained dynamic websites using PHP, HTML,
+                        CSS, and JavaScript.</li>
+                       <li>Demonstrated flexibility and adaptability by quickly learning and
+                        implementing new technologies as needed.</li>
+                   </ul>
+               </div>          
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen"  style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Master's of Computer Application (MCA)</h2>
+                    <h3 class="text-primary">Bharti Vidyapeeth, Belapur Navi Mumbai.</h3>
+                    <ul>
+                        <li>Post Graduate from Mumbai University in december 2020.</li>
+                        <li>Post Graduate with 6.8 CGPA.</li>
+                    </ul>
+                </div>
+                <hr> 
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bsc in Computer Science</h2>
+                    <h3 class="text-primary">Mumbai University (Birla College, Kalyan) </h3>
+                    <ul>
+                        <li>Graduate from birla College in August 2017.</li>
+                        <li>Post Graduate with 6.2 CGPA.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certification</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen"  style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Microsoft Azure Fundamentals (AZ-900)</h2>
+                    <ul>
+                        <li>Obtained August 2022</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Developing Solutions for Microsoft Azure (AZ-204)</h2>
+                    <ul>
+                        <li>Obtained August 2022</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen"  style="color: white;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>TypeScript</li>
+                            <li>C & c++</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col">
+                        <h3>Front-End:</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Back-end:</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>Postgreysql</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+    
+            <!-- <accordion-group heading="Hobbies">
+    
+            </accordion-group> -->
+        </accordion>
+
+    </div>
+
+    
 </div>

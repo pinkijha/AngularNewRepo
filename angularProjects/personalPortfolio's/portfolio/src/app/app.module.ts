@@ -12,9 +12,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
-import {ModalModule } from 'ngx-bootstrap/modal';
-import {CarouselModule } from 'ngx-bootstrap/carousel';
-import {CollapseModule } from 'ngx-bootstrap/collapse';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { FormsModule } from '@angular/forms';
 
@@ -31,7 +32,9 @@ import { FormsModule } from '@angular/forms';
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    FormsModule
+    AccordionModule.forRoot(),
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
