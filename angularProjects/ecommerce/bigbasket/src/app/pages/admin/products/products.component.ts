@@ -51,6 +51,11 @@ constructor(private productSrv: ProductService){
     })
   }
 
+  onEdit(item: any){
+    this.productobj(item);
+    this.openSidePanel();
+  }
+
   onSave(){
     this.productSrv.saveProduct(this.productobj).subscribe((res:any)=>{
       debugger;
