@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-post-list',
@@ -15,7 +15,15 @@ export class PostListComponent {
 
 
   // message from child component via output decorator
-  // 
+  // create variable to send this child to parent
 
+  outputChildMessage : string = 'message from child component via output decorator';
+
+  // create eventEditor with the output decorator
+   @Output() messageEvent = new EventEmitter<string>()
+
+   sendMessage(){
+    this.messageEvent.emit(this.outputChildMessage);  
+   }
 
 }

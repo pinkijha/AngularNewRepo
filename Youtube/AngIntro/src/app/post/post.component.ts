@@ -29,4 +29,11 @@ export class PostComponent implements AfterViewInit {
   // making this post as a cild
   fromPostChild : string = 'Hey! i am child from post component';
 
+  // outputDecoretor
+
+  fromChildOutput! : string;
+  recieveMessage($event: any){
+    this.fromChildOutput = $event;
+  }
+
 }
