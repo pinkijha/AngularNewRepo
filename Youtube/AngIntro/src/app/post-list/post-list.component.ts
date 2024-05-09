@@ -6,6 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent {
+
+  //called parent to child  
   @Input() postParent! : string ;
+
+  // variable for parent(post) component
+  postFromChild :string = 'Data from post-list, i am your child'
 
 }
