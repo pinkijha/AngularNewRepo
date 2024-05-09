@@ -3,4 +3,5 @@
 <p>{{message}}</p>
 <app-post-list [postParent]="postParentMessage" (messageEvent)="recieveMessage($event)"></app-post-list>
 <p>{{fromChildOutput}}</p>
+<button (click)="sendMessagePost()">viewPost</button>
 

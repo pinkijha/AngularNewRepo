@@ -18,5 +18,11 @@ export class AppComponent implements AfterViewInit{
       console.log(this.postChild);
       this.postMessage = this.postChild.fromPostChild;
   }
- 
+
+
+  // @output Decorator
+  fromChildOutputPost!: string;
+  recieveMessagePost($event :any){
+    this.fromChildOutputPost = $event;
+  }
 }

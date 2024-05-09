@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, Input, ViewChild, AfterViewInit, Output, EventEmitter } from '@angular/core';
 import { PostListComponent } from '../post-list/post-list.component';
 
 @Component({
@@ -27,13 +27,19 @@ export class PostComponent implements AfterViewInit {
   }
 
   // making this post as a cild
-  fromPostChild : string = 'Hey! i am child from post component';
+  fromPostChild: string = 'Hey! i am child from post component';
 
-  // outputDecoretor
-
-  fromChildOutput! : string;
-  recieveMessage($event: any){
+  // outputDecoretor(as a parent)
+  fromChildOutput!: string;
+  recieveMessage($event: any) {
     this.fromChildOutput = $event;
   }
 
+  // // outputDecoretor(as a child)
+  fromPostOutput: string = 'The data coming from post component via @output Decorator';
+  @Output() messageEventPost = new EventEmitter<string>();
+
+  sendMessagePost(){
+    this.messageEventPost.emit(this.fromChildOutput);
+  }
 }
