@@ -6,15 +6,18 @@ import { PostListComponent } from '../post-list/post-list.component';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements AfterViewInit{
+export class PostComponent implements AfterViewInit {
   title: string = 'List of Posts';
+
+  // accessing parent data from app.component.ts
   postParentMessage: string = 'message from post'
-  message! : string;
+  @Input() fromParent!: string;
 
-  @Input() fromParent! : string;
+
+  // accessing child data from post-list
+  message!: string;
   @ViewChild(PostListComponent) fromChild: any;
-
-  constructor(){
+  constructor() {
     console.log(this.fromChild);
   }
 
@@ -22,5 +25,8 @@ export class PostComponent implements AfterViewInit{
     console.log(this.fromChild);
     this.message = this.fromChild.postFromChild;
   }
-  
+
+  // making this post as a cild
+  fromPostChild : string = 'Hey! i am child from post component';
+
 }
