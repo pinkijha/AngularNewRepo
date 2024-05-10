@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  bool: boolean = true; //class binding
+  bool: boolean = true; //class & style binding 
 
 
 /* 
