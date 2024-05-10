@@ -1,13 +1,22 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { PostComponent } from './post/post.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit{
-  title = 'AngIntro';
+export class AppComponent {
+
+  bool: boolean = true; //class binding
+
+
+/* 
+  mainTitle :string = 'Main Component'; //string interpolation
+
+  // property binding
+  imgUrls : string = 'https://www.21kschool.com/us/wp-content/uploads/sites/37/2022/10/5-ways-to-incorporate-coding-into-your-classroom.png';
+  
+  title = 'AngIntro'; //interpolation
   message: string = 'Hey! I am your Parents..'
 
   /// access data from child(post) component
@@ -24,5 +33,5 @@ export class AppComponent implements AfterViewInit{
   fromChildOutputPost!: string;
   recieveMessagePost($event :any){
     this.fromChildOutputPost = $event;
-  }
+  } */
 }

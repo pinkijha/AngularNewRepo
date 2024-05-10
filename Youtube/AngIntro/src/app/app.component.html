@@ -1,5 +1,3 @@
-<h1>Angular App</h1>
-<p>{{postMessage}}</p>
+<h2 [class.text-red]="bool">Angular App</h2>
 <app-navbar></app-navbar>
-<app-post [fromParent]="message" (messageEventPost)="recieveMessagePost($event)"></app-post>
-<p>{{fromChildOutputPost}}</p>
+
