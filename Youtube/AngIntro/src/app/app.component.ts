@@ -9,6 +9,10 @@ export class AppComponent {
 
   bool: boolean = true; //class & style binding 
 
+  genAlert(){
+    alert("You clicked me!")
+  }
+
 
 /* 
   mainTitle :string = 'Main Component'; //string interpolation
