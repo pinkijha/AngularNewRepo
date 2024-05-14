@@ -19,10 +19,12 @@ export class AppComponent {
   // alert($event.keyCode);
 
   // traditional method for Eventfiltering
-  if($event.keyCode == 13){
+/*   if($event.keyCode == 13){
     console.log('enter key pressed');
-  }
+  } */
   
+  console.log('enter key pressed');
+
 
   }
 
