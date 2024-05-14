@@ -9,8 +9,21 @@ export class AppComponent {
 
   bool: boolean = true; //class & style binding 
 
+   /* // eventClick 
   genAlert(){
     alert("You clicked me!")
+  }
+ */
+
+  onkeyup($event: any){
+  // alert($event.keyCode);
+
+  // traditional method for Eventfiltering
+  if($event.keyCode == 13){
+    console.log('enter key pressed');
+  }
+  
+
   }
 
 
