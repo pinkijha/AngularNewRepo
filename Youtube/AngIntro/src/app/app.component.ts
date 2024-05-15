@@ -15,17 +15,19 @@ export class AppComponent {
   }
  */
 
-  onkeyup($event: any){
-  // alert($event.keyCode);
+  items: string[] = ['Item 1', 'Item 2', 'Item 3', 'Another Item'];
+  filteredItems: string[] = [];
 
-  // traditional method for Eventfiltering
-/*   if($event.keyCode == 13){
-    console.log('enter key pressed');
-  } */
-  
-  console.log('enter key pressed');
+  constructor() {
+    // Initialize filteredItems with all items
+    this.filteredItems = this.items;
+  }
 
-
+  filterItems(searchTerm: string) {
+    this.filteredItems = this.items.filter(item =>
+      item.toLowerCase().includes(searchTerm.toLowerCase())      
+    );
+    
   }
 
 

@@ -3,6 +3,10 @@
 <!-- <button (click)="genAlert()">Click me</button> -->
 <app-navbar></app-navbar>
 
-<!-- Event Filtering -->
+<!-- Event Filtering 
+<input type="text" (keyup.enter)="onkeyup($event)"> -->
+<input type="text" (input)="filterItems($any($event.target).value)" placeholder="Search...">
+<ul>
+  <li *ngFor="let item of filteredItems">{{ item }}</li>
+</ul>
 
-<input type="text" (keyup.enter)="onkeyup($event)">
