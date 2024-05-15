@@ -7,40 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  bool: boolean = true; //class & style binding 
 
-   /* // eventClick 
-  genAlert(){
-    alert("You clicked me!")
-  }
- */
-  getvalue(username: any){
- console.log(username)
+  userName!: string ;
+
+
+  logInputValue(){
+    console.log(this.userName);
   }
 
 
-/* 
-  mainTitle :string = 'Main Component'; //string interpolation
 
-  // property binding
-  imgUrls : string = 'https://www.21kschool.com/us/wp-content/uploads/sites/37/2022/10/5-ways-to-incorporate-coding-into-your-classroom.png';
-  
-  title = 'AngIntro'; //interpolation
-  message: string = 'Hey! I am your Parents..'
-
-  /// access data from child(post) component
-  postMessage! : string;
-  @ViewChild(PostComponent)  postChild: any;
- 
-  ngAfterViewInit(): void {
-      console.log(this.postChild);
-      this.postMessage = this.postChild.fromPostChild;
-  }
-
-
-  // @output Decorator
-  fromChildOutputPost!: string;
-  recieveMessagePost($event :any){
-    this.fromChildOutputPost = $event;
-  } */
 }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/nabvar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { PostListComponent } from './post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [],
