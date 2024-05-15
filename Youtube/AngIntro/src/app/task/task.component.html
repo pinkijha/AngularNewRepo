@@ -1,0 +1,15 @@
+<div  [style.textAlign]="'center'">
+    <h1>Post Form</h1>
+<input type="text" [(ngModel)]="textValue1"placeholder="Post title"><br><br>
+<textarea rows="10" cols="30" [(ngModel)]="textValue2" placeholder="Post Details"></textarea><br><br>
+<input type="text" [(ngModel)]="postImg" placeholder="Post Image URL"><br><br>
+<input type="text" [(ngModel)]="postUrl" placeholder="Post URL"><br><br>
+<input type="checkbox" [(ngModel)]="addbchgrnd"> Add Background
+</div>
+
+<div class="preview">
+    <img [src]="postImg">
+    <h1><span [class.add-bgColor]="addbchgrnd">{{textValue1}}</span></h1>
+    <p>{{textValue2}}</p>
+    <a [href]="postUrl" target="_blank" [style.display]="postUrl ? 'block' : 'none'">More Details</a>
+</div>
