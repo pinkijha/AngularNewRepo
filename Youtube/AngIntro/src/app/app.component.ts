@@ -14,20 +14,8 @@ export class AppComponent {
     alert("You clicked me!")
   }
  */
-
-  items: string[] = ['Item 1', 'Item 2', 'Item 3', 'Another Item'];
-  filteredItems: string[] = [];
-
-  constructor() {
-    // Initialize filteredItems with all items
-    this.filteredItems = this.items;
-  }
-
-  filterItems(searchTerm: string) {
-    this.filteredItems = this.items.filter(item =>
-      item.toLowerCase().includes(searchTerm.toLowerCase())      
-    );
-    
+  getvalue($event: any){
+ console.log($event.target.value)
   }
 
 
