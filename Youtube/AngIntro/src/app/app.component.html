@@ -5,6 +5,7 @@
 
 
 <!-- two way data binding -->
-<input type="text" [(ngModel)]="userName" (keyup.enter)=" logInputValue()">
+<input type="text" [value]="textValue" (keyup.enter)=" logInputValue()"><hr>
+<input type="text" [(ngModel)]="textValue" (keyup.enter)=" logInputValue()">
 
 

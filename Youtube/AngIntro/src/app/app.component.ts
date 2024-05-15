@@ -6,15 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-
-  userName!: string ;
+  textValue : string = 'cmpng from';
 
 
   logInputValue(){
-    console.log(this.userName);
+    console.log(this.textValue);
   }
-
-
-
 }
