@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  textValue : string = 'cmpng from';
+ postarr : Array<string> = ['post1','post2','post3','post4','post5','post6',];
 
+ constructor(){
 
-  logInputValue(){
-    console.log(this.textValue);
-  }
+ }
 }
