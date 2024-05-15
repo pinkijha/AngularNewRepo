@@ -1,12 +1,15 @@
 <h2>Fetching ngFor Array </h2>
 <ul>
    <button (click)="addNew()">Add new</button>
-   <button (click)="remove()">Remove</button>
+   
 </ul>
 
 <h2>Fetch array object </h2>
 <ul>
-    <p *ngFor="let post of objArray">{{post.postTitle}}</p>
+    <p *ngFor="let post of objArray">{{post.postTitle}}
+        <button (click)="remove(post)">Remove</button>
+    </p>
+    
 </ul>
 
 
