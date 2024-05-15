@@ -14,8 +14,8 @@ export class AppComponent {
     alert("You clicked me!")
   }
  */
-  getvalue($event: any){
- console.log($event.target.value)
+  getvalue(username: any){
+ console.log(username)
   }
 
 
