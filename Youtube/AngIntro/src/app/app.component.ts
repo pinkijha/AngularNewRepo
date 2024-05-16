@@ -15,14 +15,13 @@ objArray : Array<any> = [
   {id: 5, postTitle: 'post5'},
   {id: 6, postTitle: 'post6'},
 ]
-post: any;
+
 
 addNew(){
   this.objArray.push({id:7,postTitle: 'post7'});
 }
 
-remove(post: any){
-let index = this.objArray.indexOf(post);
+remove(index: any){
 this.objArray.splice(index, 1)
 }
 
