@@ -5,12 +5,15 @@
 </ul>
 
 <h2>Fetch array object </h2>
-<ul>
-    <p *ngFor="let post of objArray; let i = index" >{{post.postTitle}}
+<ul *ngFor="let post of objArray; let i = index">
+    <p [ngStyle]="{ 'color': i % 2 === 0 ? 'blue' : 'green' }">{{i+1}}{{post.postTitle}}
         <button (click)="remove(i)">Remove</button>
     </p>
     
 </ul>
+
+
+  
 
 
 
